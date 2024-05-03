@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="container">
+    <legend class="text-center text-secondary fw-bold my-5">Vanila JavaScript and Firebase CRUD project</legend>
+    <form class="justify-content-around d-flex row" method="submit">
+        <fieldset class="col-md-6">
+            <div class="mb-3">
+                <label for="code1" class="form-label">Product code</label>
+                <input type="number" id="code1" class="form-control" placeholder="only numbers...">
+            </div>
+            <div class="mb-3">
+                <label for="name" class="form-label" >Product Name</label>
+                <input type="text" id="name" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="quantity" class="form-label">Product Quantity</label>
+                <input type="number" id="quantity" class="form-control">
+            </div>
+            <div class="d-flex mb-5 justify-content-around">
+                <button class="btn fw-bold btn-secondary text-white m-1 float-center" id="into1" type="submit" value="submit" name="submit">Insert <span class="d-none d-lg-inline"> into DB</span></button>
+                <button class="btn fw-bold btn-secondary text-white m-1 float-center" id="update" type="submit" value="submit" name="submit">Update <span class="d-none d-lg-inline"> where</span></button>
+                <button class="btn fw-bold btn-secondary text-white m-1 float-center" id="delete" type="submit" value="submit" name="submit">Delete <span class="d-none d-lg-inline"> from DB</span></button>
+            </div>
+        </fieldset>
+        <fieldset class="col-md-6">
+            <h6 class="text-center text-secondary fw-bold">Find product by Code</h6>
+            <div class="mb-3">
+                <label for="code2" class="form-label">Product code</label>
+                <input type="number" id="code2" class="form-control" placeholder="only numbers...">
+            </div>
+            <div class="d-flex justify-content-center">
+                <button class="btn fw-bold btn-secondary text-white m-1 mb-5 float-center" id="into2" type="submit" value="submit" name="submit">Select from DB</button>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">Product name</li>
+                <li class="list-group-item fw-bold list-group-item-secondary">Product quantity</li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+<script type="module" src="project1.js"></script>
+</html>
