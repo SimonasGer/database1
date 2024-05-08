@@ -10,15 +10,15 @@
     <form class="justify-content-around d-flex row" method="submit">
         <fieldset class="col-md-6">
             <div class="mb-3">
-                <label for="code1" class="form-label">Product code</label>
+                <label for="code1" id="er1" class="form-label">Product code</label>
                 <input type="number" id="code1" class="form-control" placeholder="only numbers...">
             </div>
             <div class="mb-3">
-                <label for="name" class="form-label" >Product Name</label>
+                <label for="name" id="er2" class="form-label" >Product Name</label>
                 <input type="text" id="name" class="form-control">
             </div>
             <div class="mb-3">
-                <label for="quantity" class="form-label">Product Quantity</label>
+                <label for="quantity" id="er3" class="form-label">Product Quantity</label>
                 <input type="number" id="quantity" class="form-control">
             </div>
             <div class="d-flex mb-5 justify-content-around">
@@ -37,8 +37,6 @@
                 <button class="btn fw-bold btn-secondary text-white m-1 mb-5 float-center" id="into2" type="submit" value="submit" name="submit">Select from DB</button>
             </div>
             <ul class="list-group">
-                <li class="list-group-item">Product name</li>
-                <li class="list-group-item fw-bold list-group-item-secondary">Product quantity</li>
             </ul>
         </fieldset>
     </form>
